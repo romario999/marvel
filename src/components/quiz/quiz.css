@@ -1,0 +1,66 @@
+/* Quiz.css */
+.quiz-container {
+    max-width: 400px; /* Зменшено максимальну ширину для блоку */
+    margin: 0 auto;
+    padding: 15px; /* Зменшено відступи */
+    border-radius: 8px; /* Зменшено радіус закруглення */
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Зменшено розмір тіні */
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 15px; /* Зменшено нижній відступ */
+}
+
+.quiz-header h2 {
+    font-size: 1.8em; /* Зменшено розмір заголовка */
+    color: #343a40;
+}
+
+.character-image {
+    width: 100%;
+    margin: 0 auto; /* Центрування зображення */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Зменшено нижній відступ */
+}
+
+.answer-button {
+    display: block;
+    width: 100%;
+    padding: 8px; /* Зменшено вертикальне заповнення */
+    margin: 8px 0; /* Зменшено зовнішній відступ */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em; /* Зменшено розмір шрифту для кнопок */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-button:hover {
+    opacity: 0.8;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: lightcoral;
+}
+
+/* Медіа-запити для малих екранів */
+@media (max-width: 480px) {
+    .quiz-container {
+        max-width: 90%; /* Зберігається адаптивність на малих екранах */
+        padding: 10px; /* Зменшено відступи */
+    }
+
+    .quiz-header h2 {
+        font-size: 1.5em; /* Зменшено розмір заголовка */
+    }
+
+    .answer-button {
+        font-size: 0.9em; /* Зменшено розмір шрифту кнопок */
+    }
+}
